@@ -8,12 +8,12 @@
 package teste;
 
 import java.util.*;
-public class Teste {
+public class Entrada_do_salario {
 
     public static void main(String[] args) {
         float salario;
         int dependente;
-        Salario valor = new Salario();
+        Caluculo_do_imposto valor = new Caluculo_do_imposto();
         Scanner input = new Scanner (System.in);  
         
         System.out.println("digite o seu salário");
