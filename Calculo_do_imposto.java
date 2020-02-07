@@ -4,7 +4,7 @@ package teste;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
 
-public class Caluculo_do_imposto {
+public class Calculo_do_imposto {
     public float salario;
     public int dependente;
     private double inss;

@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) {
         float salario;
         int dependente;
-        Caluculo_do_imposto valor = new Caluculo_do_imposto();
+        Calculo_do_imposto valor = new Calculo_do_imposto();
         Scanner input = new Scanner (System.in);  
         
         System.out.println("digite o seu salário");
