@@ -8,7 +8,7 @@
 package teste;
 
 import java.util.*;
-public class Entrada_do_salario {
+public class Main {
 
     public static void main(String[] args) {
         float salario;
