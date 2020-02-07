@@ -24,11 +24,11 @@ public class Calculo_do_imposto {
         if (this.salario < 1751.81) {
         setInss(this.salario * 0.08);
         }
-        // se salário de 1751,82 até 2919,72 9%
+        // se salário de 1751,82 até 2919,72 alicota de 9%
         if ((this.salario > 1751.82) && (this.salario < 2919.72)) {
         setInss(this.salario * 0.09);
         }
-        // se salário maior que 2919,73 e menor que 5839,45
+        // se salário maior que 2919,73 e menor que 5839,45 alicota de 11%
         if ((this.salario > 2919.73 ) && (this.salario <= 5839.45)) {
         setInss(this.salario * 0.11);
         }
