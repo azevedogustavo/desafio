@@ -1,6 +1,7 @@
+// class utilizada para calcular descontos no salário
 package teste;
- // class utilizada para calcular descontos no salário
  
+// bibliotecas de arredondamento de valores decimais 
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
 
@@ -18,28 +19,7 @@ public class Calculo_do_imposto {
    return df.format(valor);
     }
     
-    void impostoINSS(){
-        // se salário até 1751,81 alicota de 8%
-        if (this.salario < 1751.81) {
-        setInss(this.salario * 0.08);
-        }
-        // se salário de 1751,82 até 2919,72 9%
-        if ((this.salario > 1751.82) && (this.salario < 2919.72)) {
-        setInss(this.salario * 0.09);
-        }
-        // se salário maior que 2919,73 e menor que 5839,45
-        if ((this.salario > 2919.73 ) && (this.salario <= 5839.45)) {
-        setInss(this.salario * 0.11);
-        }
-        // se salário maior que 5839,45 então valor máximo de inss é 642,34 
-        if(this.salario>5839.45) {
-          
-        setInss(642.34);    
-        
-        }
-        // imprime o valor do imposto do inss arredondado                            
-        System.out.println("imposto_inss = R$ " + arredondar(this.inss));
-        }
+
     
     void impostoIRPF(){
         
