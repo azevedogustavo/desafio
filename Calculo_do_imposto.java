@@ -90,7 +90,7 @@ public class Calculo_do_imposto {
     }
     void desconto_final(){
         // calculo do desconto final
-        setDesconto_final(this.inss + this.irpf - this.desconto_dependente);
+        setDesconto_final(this.inss + this.irpf);
         System.out.println("desconto_total = R$ " + arredondar(this.desconto_final));
     }
     
