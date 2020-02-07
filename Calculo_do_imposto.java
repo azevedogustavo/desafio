@@ -38,7 +38,7 @@ public class Calculo_do_imposto {
         
         }
         // imprime o valor do imposto do inss arredondado                            
-        System.out.println("imposto_inss = R$ " + arredondar(getInss()));
+        System.out.println("imposto_inss = R$ " + arredondar(this.inss));
         }
     
     void impostoIRPF(){
@@ -67,15 +67,15 @@ public class Calculo_do_imposto {
         // o cálculo é dado pelo iprf menos o desconto de ependente
         desconto_dependente();
         
-        setIrpf(getIrpf() - getDesconto_dependente());
+        setIrpf(this.irpf - this.desconto_dependente);
         
-        if (getIrpf() < 0){
+        if (this.irpf < 0){
             setIrpf(0);
-            System.out.println("imposto_irpf = R$ " + arredondar(getIrpf()));            
+            System.out.println("imposto_irpf = R$ " + arredondar(this.irpf));            
         }
         
         else {
-        System.out.println("imposto_irpf = R$ " + arredondar(getIrpf()));
+        System.out.println("imposto_irpf = R$ " + arredondar(this.irpf));
         
         }
         
@@ -89,45 +89,33 @@ public class Calculo_do_imposto {
     }
     void desconto_final(){
         // calculo do desconto final
-        setDesconto_final(getInss() + getIrpf());
-        System.out.println("desconto_total = R$ " + arredondar(getDesconto_final()));
+        setDesconto_final(this.inss + this.irpf);
+        System.out.println("desconto_total = R$ " + arredondar(this.desconto_final));
     }
     
     void salario_final(){
         // cáculo do salário final,  valor final arredondadao
-        System.out.println("salario_final = R$" + arredondar((this.salario - getInss() - getIrpf()) ));
+        System.out.println("salario_final = R$" + arredondar((this.salario - this.inss - this.irpf )));
         
         }
 
          
-    // Get a Set dos atributos private
-      public double getInss() {
-        return inss;
-    }
 
     public void setInss(double inss) {
         this.inss = inss;
     }
 
-    public double getIrpf() {
-        return irpf;
-    }
 
     public void setIrpf(double irpf) {
         this.irpf = irpf;
     }
 
-    public double getDesconto_final() {
-        return desconto_final;
-    }
 
     public void setDesconto_final(double desconto_final) {
         this.desconto_final = desconto_final;
     }
 
-    public double getDesconto_dependente() {
-        return desconto_dependente;
-    }
+
 
     public void setDesconto_dependente(double desconto_dependente) {
         this.desconto_dependente = desconto_dependente;
