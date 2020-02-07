@@ -1,6 +1,6 @@
 // Este cógigo foi feito por Gustavo Almeida e testado no NetBeans 8.0.2
 // O código foi criado para o cálculo do descontos de imposto de renda retido na fonte.
-// A class Salario é utilizada para o cálculo dos desconto.
+// A classe Salario é utilizada para o cálculo dos desconto.
 // Além disso foi necessãrio o uso de bibliotecas para arendondar valores decimais,
 // como math.RoundingMode e text.DecimalFormat para que os descontos e o salário final não
 // tenha mais casas decimais que a moeda utilizada 
